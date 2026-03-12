@@ -15,10 +15,7 @@ const Contact = () => {
                 <p><strong>Regional Office:</strong><br />26451 Ynez Rd STE C, Temecula, CA 92591-4684</p>
                 <p className="mt-2"><strong>Corporate HQ:</strong><br />601 NW 2nd St, Evansville, IN 47708</p>
               </div>
-              <div>
-                <p className="font-mono font-bold text-foreground mb-1">Contacts</p>
-                <p></p>
-              </div>
+
             </div>
           </div>
 
