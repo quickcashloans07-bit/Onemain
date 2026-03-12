@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const ContactPage = () => {
   return (
@@ -41,14 +41,6 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-6 border-2 border-border hover:border-accent transition-colors">
-                    <Phone className="w-8 h-8 text-accent flex-shrink-0" />
-                    <div>
-                      <h3 className="font-mono font-bold mb-2">Phone</h3>
-                      <p className="text-muted-foreground">
-                      </p>
-                    </div>
-                  </div>
 
                   <div className="flex items-start gap-4 p-6 border-2 border-border hover:border-accent transition-colors">
                     <Mail className="w-8 h-8 text-accent flex-shrink-0" />
