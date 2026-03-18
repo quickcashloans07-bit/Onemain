@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import lendingFundsUsaLogo from "@/assets/lendingfundsusa-logo.png";
+
 import { Shield, Lock, Award } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +9,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity mb-4">
-              <img src={lendingFundsUsaLogo} alt="OneMain Financial" className="h-28 md:h-32 lg:h-36 w-auto object-contain" />
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
               Personal loans made personal. Your trusted partner for personal loans with flexible terms.
