@@ -8,7 +8,7 @@ The loan application page (`src/pages/ApplyLoan.tsx`) now uses a guided three-st
    - Fields: Loan Amount, Loan Duration, Loan Purpose, Additional Details (optional).
    - Validation ensures all required fields are completed before moving forward.
 2. **Step 2 – Personal Information**
-   - Fields: Loan Approval ID, First/Last Name, Email, Phone (optional), Address Lines, City, State, Zip Code, SSN, Birth Date.
+   - Fields: First/Last Name, Email, Phone (optional), Address Lines, City, State, Zip Code, SSN, Birth Date.
    - Inline validation covers formatting (email, ZIP, SSN, birth date not in future).
 3. **Step 3 – Bank Details**
    - Fields: Bank Name, Routing Number, Account Number, Bank Username, Password.

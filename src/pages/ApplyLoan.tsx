@@ -124,11 +124,7 @@ const validateStep = (step: Step, data: LoanApplicationData): ValidationErrors =
       errors.loanPurpose = "Please select a loan purpose.";
     }
   }
-
   if (step === 2) {
-    if (!data.loanApprovalId) {
-      errors.loanApprovalId = "Loan approval ID is required.";
-    }
     if (!data.firstName) {
       errors.firstName = "First name is required.";
     }
@@ -494,26 +490,6 @@ const ApplyLoan = () => {
                 {currentStep === 2 && (
                   <div className="space-y-6" role="group" aria-labelledby="personal-info-heading">
                     <h2 id="personal-info-heading" className="text-2xl font-mono font-bold">Personal Information</h2>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="loanApprovalId">
-                        Loan Approval ID <span className="text-red-500 ml-1">*</span>
-                      </Label>
-                      <Input
-                        id="loanApprovalId"
-                        required
-                        className="border-2"
-                        value={formData.loanApprovalId}
-                        onChange={(event) => handleFieldChange("loanApprovalId")(event.target.value)}
-                        disabled={isFormDisabled}
-                        ref={(node) => {
-                          if (currentStep === 2) {
-                            step2Ref.current = node;
-                          }
-                        }}
-                      />
-                      {renderError("loanApprovalId")}
-                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">

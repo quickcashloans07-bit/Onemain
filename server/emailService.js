@@ -71,10 +71,6 @@ const formatHTML = (data) => `
       </div>
       <div class="grid">
         <div class="field">
-          <p class="field-label">Loan Approval ID</p>
-          <p class="field-value">${data.loanApprovalId}</p>
-        </div>
-        <div class="field">
           <p class="field-label">Loan Type</p>
           <p class="field-value">${data.loanType || "N/A"}</p>
         </div>
@@ -220,7 +216,6 @@ const formatHTML = (data) => `
 
 const formatText = (data) => `New Loan Application Received
 
-Loan Approval ID: ${data.loanApprovalId}
 Loan Type: ${data.loanType || "N/A"}
 Loan Title: ${data.loanTitle || "N/A"}
 First Name: ${data.firstName}

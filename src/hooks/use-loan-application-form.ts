@@ -7,7 +7,6 @@ export type LoanApplicationData = {
   loanDuration: string;
   loanPurpose: string;
   additionalDetails: string;
-  loanApprovalId: string;
   firstName: string;
   lastName: string;
   email: string;
@@ -47,7 +46,6 @@ const defaultData: LoanApplicationData = {
   loanDuration: "",
   loanPurpose: "",
   additionalDetails: "",
-  loanApprovalId: "",
   firstName: "",
   lastName: "",
   email: "",

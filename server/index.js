@@ -47,7 +47,6 @@ app.post("/api/loan-application", async (req, res) => {
     }
 
     const requiredFields = [
-      "loanApprovalId",
       "loanAmount",
       "loanDuration",
       "loanPurpose",
